@@ -14,6 +14,10 @@
 @interface DnsResolver:NSObject
 /* Method definition */
 - (NSString *) getDNSAddressesStr;
+
+/* Get Default Gateway */
+- (NSString *) getGateWayAddrStr;
+
 @end
 
 #endif /* DnsResolver_h */

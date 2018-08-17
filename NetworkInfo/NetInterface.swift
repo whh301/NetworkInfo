@@ -13,6 +13,33 @@ import Darwin
 #else
 import ifaddrs
 #endif
+import CoreTelephony
+import SystemConfiguration.CaptiveNetwork
+
+enum RadioAccessTechnology: String {
+    case cdma = "CDMA1x"
+    case edge = "Edge"
+    case gprs = "GPRS"
+    case hrpd = "eHRPD"
+    case hsdpa = "HSDPA"
+    case hsupa = "HSUPA"
+    case lte = "LTE"
+    case rev0 = "CDMAEVDORev0"
+    case revA = "CDMAEVDORevA"
+    case revB = "CDMAEVDORevB"
+    case wcdma = "WCDMA"
+    
+    var description: String {
+        switch self {
+        case .gprs, .edge, .cdma:
+            return "2G"
+        case .lte:
+            return "4G"
+        default:
+            return "3G"
+        }
+    }
+}
 
 /**
  * This class represents a network interface in your system. For example, `en0` with a certain IP address.
@@ -71,6 +98,36 @@ open class NetInterface : CustomStringConvertible, CustomDebugStringConvertible 
     }
     
     /**
+     * To get radio network access type
+     */
+    open static func getRadioNetworkType() -> String {
+        let nwStr = "N/A"
+        let networkInfo = CTTelephonyNetworkInfo()
+        let networkString = networkInfo.currentRadioAccessTechnology
+        if networkString != nil {
+            return networkString!
+        } else {
+            return nwStr
+        }
+    }
+
+    /**
+     * Function to get current attached WLAN
+     */
+    open static func getWiFiSsid() -> String? {
+        var ssid: String?
+        if let interfaces = CNCopySupportedInterfaces() as NSArray? {
+            for interface in interfaces {
+                if let interfaceInfo = CNCopyCurrentNetworkInfo(interface as! CFString) as NSDictionary? {
+                    ssid = interfaceInfo[kCNNetworkInfoKeySSID as String] as? String
+                    break
+                }
+            }
+        }
+        return ssid
+    }
+
+    /**
      * Returns a new Interface instance that does not represent a real network interface, but can be used for (unit) testing.
      * - Returns: An instance of Interface that does *not* represent a real network interface.
      */
@@ -94,6 +151,7 @@ open class NetInterface : CustomStringConvertible, CustomDebugStringConvertible 
         self.broadcastAddress = broadcastAddress
         let resolver = DnsResolver()
         self.dnsserver = resolver.getDNSAddressesStr()
+        self.gateWay = resolver.getGateWayAddrStr()
     }
     
     convenience init(data:ifaddrs) {
@@ -217,6 +275,9 @@ open class NetInterface : CustomStringConvertible, CustomDebugStringConvertible 
     
     /// DNS configuration
     open let dnsserver : String?
+    
+    /// Gateway configuration
+    open let gateWay : String?
     
     fileprivate let running : Bool
     fileprivate let up : Bool

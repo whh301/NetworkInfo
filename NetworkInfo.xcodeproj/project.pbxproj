@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5F3D60321274BDB00C41AF7 /* NetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3D60121274BDB00C41AF7 /* NetInfoViewController.swift */; };
+		A5F3D60421274BDB00C41AF7 /* NetInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3D60221274BDB00C41AF7 /* NetInfoPageViewController.swift */; };
+		A5F3D6062127562B00C41AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F3D6052127562B00C41AF7 /* Main.storyboard */; };
 		A5F9A5492125E60F00D1D9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */; };
-		A5F9A54B2125E60F00D1D9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9A54A2125E60F00D1D9B8 /* ViewController.swift */; };
-		A5F9A54E2125E60F00D1D9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A54C2125E60F00D1D9B8 /* Main.storyboard */; };
 		A5F9A5502125E61100D1D9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */; };
 		A5F9A5532125E61100D1D9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */; };
 		A5F9A55E2125E61100D1D9B8 /* NetworkInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9A55D2125E61100D1D9B8 /* NetworkInfoTests.swift */; };
@@ -37,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5F3D5F62127196D00C41AF7 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		A5F3D60121274BDB00C41AF7 /* NetInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetInfoViewController.swift; sourceTree = "<group>"; };
+		A5F3D60221274BDB00C41AF7 /* NetInfoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetInfoPageViewController.swift; sourceTree = "<group>"; };
+		A5F3D6052127562B00C41AF7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A5F9A5452125E60F00D1D9B8 /* NetworkInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5F9A54A2125E60F00D1D9B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5F9A54D2125E60F00D1D9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F9A5522125E61100D1D9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F9A5542125E61100D1D9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,15 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */,
-				A5F9A54A2125E60F00D1D9B8 /* ViewController.swift */,
+				A5F3D60221274BDB00C41AF7 /* NetInfoPageViewController.swift */,
+				A5F3D60121274BDB00C41AF7 /* NetInfoViewController.swift */,
 				A5F9A5792125E7AF00D1D9B8 /* NetInterface.swift */,
 				A5F9A57E212600F400D1D9B8 /* DnsResolver.m */,
-				A5F9A54C2125E60F00D1D9B8 /* Main.storyboard */,
+				A5F3D6052127562B00C41AF7 /* Main.storyboard */,
 				A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */,
 				A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */,
 				A5F9A5542125E61100D1D9B8 /* Info.plist */,
 				A5F9A57D212600F300D1D9B8 /* NetworkInfo-Bridging-Header.h */,
 				A5F9A5802126119F00D1D9B8 /* DnsResolver.h */,
+				A5F3D5F62127196D00C41AF7 /* route.h */,
 			);
 			path = NetworkInfo;
 			sourceTree = "<group>";
@@ -252,9 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F3D6062127562B00C41AF7 /* Main.storyboard in Resources */,
 				A5F9A5532125E61100D1D9B8 /* LaunchScreen.storyboard in Resources */,
 				A5F9A5502125E61100D1D9B8 /* Assets.xcassets in Resources */,
-				A5F9A54E2125E60F00D1D9B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F3D60321274BDB00C41AF7 /* NetInfoViewController.swift in Sources */,
 				A5F9A57A2125E7B000D1D9B8 /* NetInterface.swift in Sources */,
-				A5F9A54B2125E60F00D1D9B8 /* ViewController.swift in Sources */,
 				A5F9A5492125E60F00D1D9B8 /* AppDelegate.swift in Sources */,
+				A5F3D60421274BDB00C41AF7 /* NetInfoPageViewController.swift in Sources */,
 				A5F9A57F212600F400D1D9B8 /* DnsResolver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5F9A54C2125E60F00D1D9B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5F9A54D2125E60F00D1D9B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
