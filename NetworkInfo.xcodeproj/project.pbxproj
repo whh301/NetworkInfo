@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5F3D60321274BDB00C41AF7 /* NetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3D60121274BDB00C41AF7 /* NetInfoViewController.swift */; };
-		A5F3D60421274BDB00C41AF7 /* NetInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3D60221274BDB00C41AF7 /* NetInfoPageViewController.swift */; };
-		A5F3D6062127562B00C41AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F3D6052127562B00C41AF7 /* Main.storyboard */; };
+		A578E4FA2127B87B00BE27FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A578E4F82127B87B00BE27FF /* Main.storyboard */; };
+		A578E4FC2127C5D800BE27FF /* NetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578E4FB2127C5D800BE27FF /* NetInfoViewController.swift */; };
 		A5F9A5492125E60F00D1D9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */; };
 		A5F9A5502125E61100D1D9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */; };
 		A5F9A5532125E61100D1D9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */; };
@@ -38,10 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A578E4F92127B87B00BE27FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = NetworkInfo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A578E4FB2127C5D800BE27FF /* NetInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetInfoViewController.swift; sourceTree = "<group>"; };
 		A5F3D5F62127196D00C41AF7 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
-		A5F3D60121274BDB00C41AF7 /* NetInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetInfoViewController.swift; sourceTree = "<group>"; };
-		A5F3D60221274BDB00C41AF7 /* NetInfoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetInfoPageViewController.swift; sourceTree = "<group>"; };
-		A5F3D6052127562B00C41AF7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A5F9A5452125E60F00D1D9B8 /* NetworkInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,11 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */,
-				A5F3D60221274BDB00C41AF7 /* NetInfoPageViewController.swift */,
-				A5F3D60121274BDB00C41AF7 /* NetInfoViewController.swift */,
 				A5F9A5792125E7AF00D1D9B8 /* NetInterface.swift */,
 				A5F9A57E212600F400D1D9B8 /* DnsResolver.m */,
-				A5F3D6052127562B00C41AF7 /* Main.storyboard */,
+				A578E4FB2127C5D800BE27FF /* NetInfoViewController.swift */,
+				A578E4F82127B87B00BE27FF /* Main.storyboard */,
 				A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */,
 				A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */,
 				A5F9A5542125E61100D1D9B8 /* Info.plist */,
@@ -257,7 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5F3D6062127562B00C41AF7 /* Main.storyboard in Resources */,
+				A578E4FA2127B87B00BE27FF /* Main.storyboard in Resources */,
 				A5F9A5532125E61100D1D9B8 /* LaunchScreen.storyboard in Resources */,
 				A5F9A5502125E61100D1D9B8 /* Assets.xcassets in Resources */,
 			);
@@ -284,10 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5F3D60321274BDB00C41AF7 /* NetInfoViewController.swift in Sources */,
+				A578E4FC2127C5D800BE27FF /* NetInfoViewController.swift in Sources */,
 				A5F9A57A2125E7B000D1D9B8 /* NetInterface.swift in Sources */,
 				A5F9A5492125E60F00D1D9B8 /* AppDelegate.swift in Sources */,
-				A5F3D60421274BDB00C41AF7 /* NetInfoPageViewController.swift in Sources */,
 				A5F9A57F212600F400D1D9B8 /* DnsResolver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +320,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A578E4F82127B87B00BE27FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A578E4F92127B87B00BE27FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
