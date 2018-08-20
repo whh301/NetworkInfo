@@ -11,9 +11,11 @@ import UIKit
 class SysInfoViewController: UIViewController {
 
     // MARK: Label variants
-    
-    
-    
+    @IBOutlet weak var ipAddr: UILabel!
+    @IBOutlet weak var gateWay: UILabel!
+    @IBOutlet weak var dnsServer: UILabel!
+    @IBOutlet weak var mobNw: UILabel!
+    @IBOutlet weak var wifiSsid: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +31,18 @@ class SysInfoViewController: UIViewController {
     
     // Set the system information
     private func setupSysInfo() {
+        var allIfs = NetInterface.allInterfaces()
+        for i in 0..<allIfs.count {
+            if allIfs[i].family == NetInterface.Family.ipv4 && !allIfs[i].isLoopback {
+                ipAddr.text = allIfs[i].address
+                gateWay.text = allIfs[i].gateWay
+                dnsServer.text = allIfs[i].dnsserver
+            }
+        }
         
-        
+        mobNw.text = NetInterface.getRadioNetworkType()
+        wifiSsid.text = NetInterface.getWiFiSsid()
     }
-    
     
     /*
     // MARK: - Navigation

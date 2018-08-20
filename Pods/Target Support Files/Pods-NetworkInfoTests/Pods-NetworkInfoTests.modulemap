@@ -1,0 +1,6 @@
+framework module Pods_NetworkInfoTests {
+  umbrella header "Pods-NetworkInfoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
