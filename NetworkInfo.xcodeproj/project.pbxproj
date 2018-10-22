@@ -10,11 +10,20 @@
 		5B402AFFA090A0B8DFFBB450 /* Pods_NetworkInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0538B2878BA94AB0779ACD5F /* Pods_NetworkInfo.framework */; };
 		5D7FB583FC54C03B2E8AB212 /* Pods_NetworkInfoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C099CC256FC3E1FBE5380F /* Pods_NetworkInfoUITests.framework */; };
 		8C77DB42A2A849A128440E86 /* Pods_NetworkInfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B22F220B428A71B451EA01C /* Pods_NetworkInfoTests.framework */; };
+		A50590C82130A539002300CA /* coblue_control.m in Sources */ = {isa = PBXBuildFile; fileRef = A50590C72130A539002300CA /* coblue_control.m */; };
 		A51368A1212B108500573166 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A51368A0212B108500573166 /* GoogleService-Info.plist */; };
-		A5561582212B28DA004F23D6 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5561581212B28DA004F23D6 /* FirebaseStorage.swift */; };
+		A5561586212B3846004F23D6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5561585212B3846004F23D6 /* Log.swift */; };
+		A556158C212B678A004F23D6 /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556158A212B678A004F23D6 /* FirebaseAuthentication.swift */; };
+		A556158E212B8682004F23D6 /* IosAdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556158D212B8682004F23D6 /* IosAdbService.swift */; };
 		A578E4FA2127B87B00BE27FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A578E4F82127B87B00BE27FF /* Main.storyboard */; };
 		A578E4FC2127C5D800BE27FF /* NetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578E4FB2127C5D800BE27FF /* NetInfoViewController.swift */; };
+		A5A875392135AFE10053F437 /* BlueToothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A875382135AFE10053F437 /* BlueToothManager.swift */; };
+		A5B2F7D9212EE4E7008B354A /* OSpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2F7D8212EE4E7008B354A /* OSpeedViewController.swift */; };
 		A5C66AEC212B002A0087069F /* SysInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C66AEB212B002A0087069F /* SysInfoViewController.swift */; };
+		A5E79C5E212CDB770075BB2A /* MyFirebaseMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E79C5D212CDB770075BB2A /* MyFirebaseMessagingService.swift */; };
+		A5EBDFE8212E2D1300829DA8 /* OSpeedCommandHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBDFE4212E2D1200829DA8 /* OSpeedCommandHelper.swift */; };
+		A5EBDFEA212E2D1300829DA8 /* OSpeedEditConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBDFE6212E2D1300829DA8 /* OSpeedEditConfigHelper.swift */; };
+		A5EBDFEB212E2D1300829DA8 /* OSpeedTestResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBDFE7212E2D1300829DA8 /* OSpeedTestResolve.swift */; };
 		A5F9A5492125E60F00D1D9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */; };
 		A5F9A5502125E61100D1D9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A54F2125E61100D1D9B8 /* Assets.xcassets */; };
 		A5F9A5532125E61100D1D9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F9A5512125E61100D1D9B8 /* LaunchScreen.storyboard */; };
@@ -49,11 +58,21 @@
 		6162076B96C996142E172EE6 /* Pods-NetworkInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInfo/Pods-NetworkInfo.debug.xcconfig"; sourceTree = "<group>"; };
 		6B22F220B428A71B451EA01C /* Pods_NetworkInfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkInfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FC700FC47F1830355B66AD /* Pods-NetworkInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInfo/Pods-NetworkInfo.release.xcconfig"; sourceTree = "<group>"; };
+		A50590C62130A539002300CA /* coblue_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coblue_control.h; sourceTree = "<group>"; };
+		A50590C72130A539002300CA /* coblue_control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coblue_control.m; sourceTree = "<group>"; };
 		A51368A0212B108500573166 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A5561581212B28DA004F23D6 /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
+		A5561585212B3846004F23D6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		A556158A212B678A004F23D6 /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
+		A556158D212B8682004F23D6 /* IosAdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosAdbService.swift; sourceTree = "<group>"; };
 		A578E4F92127B87B00BE27FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = NetworkInfo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A578E4FB2127C5D800BE27FF /* NetInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetInfoViewController.swift; sourceTree = "<group>"; };
+		A5A875382135AFE10053F437 /* BlueToothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueToothManager.swift; sourceTree = "<group>"; };
+		A5B2F7D8212EE4E7008B354A /* OSpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSpeedViewController.swift; sourceTree = "<group>"; };
 		A5C66AEB212B002A0087069F /* SysInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoViewController.swift; sourceTree = "<group>"; };
+		A5E79C5D212CDB770075BB2A /* MyFirebaseMessagingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFirebaseMessagingService.swift; sourceTree = "<group>"; };
+		A5EBDFE4212E2D1200829DA8 /* OSpeedCommandHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSpeedCommandHelper.swift; sourceTree = "<group>"; };
+		A5EBDFE6212E2D1300829DA8 /* OSpeedEditConfigHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSpeedEditConfigHelper.swift; sourceTree = "<group>"; };
+		A5EBDFE7212E2D1300829DA8 /* OSpeedTestResolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSpeedTestResolve.swift; sourceTree = "<group>"; };
 		A5F3D5F62127196D00C41AF7 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 		A5F9A5452125E60F00D1D9B8 /* NetworkInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +140,10 @@
 		A5136899212B07B800573166 /* ooklaspeedtest */ = {
 			isa = PBXGroup;
 			children = (
+				A5EBDFE4212E2D1200829DA8 /* OSpeedCommandHelper.swift */,
+				A5EBDFE6212E2D1300829DA8 /* OSpeedEditConfigHelper.swift */,
+				A5EBDFE7212E2D1300829DA8 /* OSpeedTestResolve.swift */,
+				A5B2F7D8212EE4E7008B354A /* OSpeedViewController.swift */,
 			);
 			path = ooklaspeedtest;
 			sourceTree = "<group>";
@@ -128,9 +151,22 @@
 		A5561580212B28AA004F23D6 /* firebaseutil */ = {
 			isa = PBXGroup;
 			children = (
-				A5561581212B28DA004F23D6 /* FirebaseStorage.swift */,
+				A5E79C5D212CDB770075BB2A /* MyFirebaseMessagingService.swift */,
+				A556158A212B678A004F23D6 /* FirebaseAuthentication.swift */,
 			);
 			path = firebaseutil;
+			sourceTree = "<group>";
+		};
+		A5561584212B381F004F23D6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A50590C62130A539002300CA /* coblue_control.h */,
+				A50590C72130A539002300CA /* coblue_control.m */,
+				A5561585212B3846004F23D6 /* Log.swift */,
+				A556158D212B8682004F23D6 /* IosAdbService.swift */,
+				A5A875382135AFE10053F437 /* BlueToothManager.swift */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 		A5F9A53C2125E60E00D1D9B8 = {
@@ -158,6 +194,7 @@
 		A5F9A5472125E60F00D1D9B8 /* NetworkInfo */ = {
 			isa = PBXGroup;
 			children = (
+				A5561584212B381F004F23D6 /* common */,
 				A5561580212B28AA004F23D6 /* firebaseutil */,
 				A5136899212B07B800573166 /* ooklaspeedtest */,
 				A5F9A5482125E60F00D1D9B8 /* AppDelegate.swift */,
@@ -354,12 +391,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkInfo/Pods-NetworkInfo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,11 +468,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A578E4FC2127C5D800BE27FF /* NetInfoViewController.swift in Sources */,
+				A556158C212B678A004F23D6 /* FirebaseAuthentication.swift in Sources */,
+				A556158E212B8682004F23D6 /* IosAdbService.swift in Sources */,
+				A5561586212B3846004F23D6 /* Log.swift in Sources */,
 				A5F9A57A2125E7B000D1D9B8 /* NetInterface.swift in Sources */,
+				A5A875392135AFE10053F437 /* BlueToothManager.swift in Sources */,
 				A5F9A5492125E60F00D1D9B8 /* AppDelegate.swift in Sources */,
+				A5EBDFEA212E2D1300829DA8 /* OSpeedEditConfigHelper.swift in Sources */,
+				A50590C82130A539002300CA /* coblue_control.m in Sources */,
+				A5B2F7D9212EE4E7008B354A /* OSpeedViewController.swift in Sources */,
 				A5C66AEC212B002A0087069F /* SysInfoViewController.swift in Sources */,
-				A5561582212B28DA004F23D6 /* FirebaseStorage.swift in Sources */,
+				A5EBDFE8212E2D1300829DA8 /* OSpeedCommandHelper.swift in Sources */,
+				A5E79C5E212CDB770075BB2A /* MyFirebaseMessagingService.swift in Sources */,
 				A5F9A57F212600F400D1D9B8 /* DnsResolver.m in Sources */,
+				A5EBDFEB212E2D1300829DA8 /* OSpeedTestResolve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

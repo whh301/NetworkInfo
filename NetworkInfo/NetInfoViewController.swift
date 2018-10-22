@@ -14,11 +14,16 @@ class NetInfoViewController: UIViewController {
     @IBOutlet weak var trailingC: NSLayoutConstraint!
     
     @IBOutlet weak var ubeView: UIView!
+    @IBOutlet weak var txtBleSend: UITextField!
+    @IBOutlet weak var btnBleSend: UIButton!
+    @IBOutlet weak var txtBleRcvd: UITextView!
     
     var isMenuIsVisible = false
+    var firebase:FirebaseAuthentication!
+    
+    var adbSrv:AdbService!
     
     @IBAction func btnTapped(_ sender: Any) {
-        
         if !isMenuIsVisible {
             leadingC.constant = 150
             trailingC.constant = -150
@@ -43,6 +48,17 @@ class NetInfoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        firebase = FirebaseAuthentication(method: FirebaseAuthentication.AUTH_FIREBASE)
+        //if !firebase.isfirebaseSignedIn() {
+        //    Log.d(tag: "Login", string: "EXIT")
+        //} else {
+        //    Log.d(tag: "Login", string: "Sign In Success, starting service!")
+        //    MyFirebaseMessagingService.sendRegister()
+        //}
+        
+        // AdbService thread
+        adbSrv = AdbService(owner: self)
+        adbSrv.start()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +66,20 @@ class NetInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func handleUpstreamData(data: String) {
+        // Display the message to screen
+        txtBleRcvd.text = txtBleRcvd.text + "\n <== " + data
+    }
 
+    @IBAction func btnSendTapped(_ sender: Any) {
+        // Send the message
+        if (adbSrv != nil && txtBleSend.text != nil) {
+            adbSrv.sendMessage(data: txtBleSend.text!)
+            
+            txtBleRcvd.text = txtBleRcvd.text + "\n ==> " + txtBleSend.text!
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
